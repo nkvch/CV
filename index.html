@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fad0da5ccb.js" crossorigin="anonymous"></script>
+    <title>Stanislau Stankevich</title>
+    <style>
+        /* HEADER STYLES */
+        * {
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            width: 800px;
+            margin: auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            align-items: center;
+            background-color: rgb(36, 45, 53);
+            color: white;
+        }
+
+        .photo {
+            width: 150px;
+            border-radius: 100%;
+        }
+
+        .name-holder p,
+        .name-holder h1 {
+            margin: 0;
+            margin-left: 30px;
+            width: fit-content;
+        }
+
+        .contact-info {
+            list-style: none;
+            font-size: small;
+        }
+
+        .contact-info li {
+            margin-bottom: 0.8em;
+            position: relative;
+        }
+
+        .contact-info .address::before{
+            content: "\f3c5";
+        }
+
+        .contact-info .github::before{
+            content: "\f09b";
+        }
+
+        .contact-info .email::before {
+            content: "\f199";
+        }
+
+        .contact-info .phone::before{
+            content: "\f879";
+        }
+
+        .contact-info li::before {
+            font-family: FontAwesome;
+            display: inline-block;
+            position: absolute;
+            font-weight: 400;
+            left: -35px;
+        }
+
+        .contact-info a:link, .contact-info a:visited{
+            color: white;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color:#6c93ff;
+            text-decoration: none;
+        }
+
+        /* SECTIONS STYLES */
+
+        section {
+            padding: 20px;
+        }
+
+        .profile,
+        .add-skills,
+        .experience {
+            background-color: rgba(36, 45, 53, 0.062);
+        }
+
+        .profile p {
+            text-align: justify;
+        }
+
+        .skills ul.skills li {
+            display: grid;
+            grid-template-columns: 200px 200px;
+            margin-bottom: 10px;
+        }
+
+        .skills ul.skills li.node {
+            display: block;
+        }
+
+        .skills ul.skills li p {
+            margin-left: 20px;
+            font-size: smaller;
+            grid-column: 1/3;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img class="photo" src="photo.png">
+        <div class="name-holder">
+            <h1>Stanislau Stankevich</h1>
+            <p>Junior Front End Developer</p>
+        </div>
+        <ul class="contact-info">
+            <li class="address">Kopińska 12/16, 144B, Warszawa</li>
+            <li class="github"><a href="https://github.com/nkvch">github.com/nkvch</a></li>
+            <li class="email"><a href="mailto: nkvch.st@gmail.com">nkvch.st@gmail.com</a></li>
+            <li class="phone">+48 660 226 397</li>
+        </ul>
+    </header>
+    <main>
+        <section class="profile">
+            <article>
+                <h2>Profil</h2>
+                <p>Od roku zajmuję się frontendem. Obecnie poszukuję pracy/stażu aby przynieść swoje umiejętności do realizacji ciekawych projektów. Bardzo szybko się uczę, lubie poznawać nowe technologie oraz potrafię samodzielnie uczyć się i zdobywać wiedzę. Jestem osobą zdolną do myślenia analitycznego oraz lubię pracować w zespole.</p>
+            </article>
+        </section>
+        <section class="skills">
+            <h2>Umiejętności</h2>
+            <ul class="skills">
+                <li><label for="html-css">HTML5, CSS3, DOM </label><progress id="html-css" value="85" max="100">85%</progress><p>Layout z użyciem CSS3 i JS na <a href="https://github.com/nkvch/restaurant_markup">GitHub</a>, <a href="https://nkvch.github.io/restaurant_markup/">GitHub Pages</a></p></li>
+                <li><label for="js">JavaScript (ES6)</label><progress id="js" value="70" max="100">70%</progress><p><a href="https://www.codewars.com/users/nkvch/completed_solutions">Mój profil na CodeWars</a> :)</p></li>
+                <li><label for="react">ReactJS</label><progress id="js" value="45" max="100">45%</progress><p>Prosta Reactowa appka-kalendarz na <a href="https://github.com/nkvch/Planner-App">GitHub</a>, <a href="https://warm-headland-89751.herokuapp.com/">zadeployowany na Heroku</a></p></li>
+                <li><label for="english">Język angielski (B2/C1)</label><progress id="js" value="90" max="100">90%</progress></li>
+                <li class="node">Podstawowa znajomość NodeJS (<a href="https://github.com/nkvch/Kierunki">Prosta aplikacja na GitHub</a>)</li>
+            </ul>
+        </section>
+        <section class="add-skills">
+            <h3>Dodaktowe umiejętności</h3>
+            <ul>
+                <li>Podstawowa znajomość Java (+ podstawowa znajomość SpringBoot)</li>
+                <li>Znajomość Python na średnim poziomie (+ podstawowa znajomość Flask)</li>
+                <li>C++ na średnim poziomie</li>
+            </ul>
+        </section>
+        <section class="education">
+            <h2>Edukacja</h2>
+            <p>Politechnika Warszawska, Wydział Elektroniki i Technik Informacyjnych. Kierunek: Automatyka i Robotyka. 4 semestr. Planowany rok ukończenia: 2023.</p>
+        </section>
+        <section class="experience">
+            <h2>Doświadczenie</h2>
+            <p>Brak komercyjnego doświadczenia na podobnym stanowisku</p>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
