@@ -15,11 +15,11 @@
         }
 
         html {
-            width: 850px;
+            width: 1000px;
         }
 
         body {
-            width: 850px;
+            width: 1000px;
             margin: auto;
         }
 
@@ -40,13 +40,12 @@
         .name-holder p,
         .name-holder h1 {
             margin: 0;
-            margin-left: 30px;
             width: fit-content;
         }
 
         .contact-info {
             list-style: none;
-            font-size: small;
+
         }
 
         .contact-info li {
@@ -102,12 +101,14 @@
 
         .profile p {
             text-align: justify;
+            font-size: large;
         }
 
         .skills ul.skills li {
             display: grid;
             grid-template-columns: 200px 200px;
             margin-bottom: 10px;
+            font-size: large;
         }
 
         .skills ul.skills li.node {
@@ -116,8 +117,20 @@
 
         .skills ul.skills li p {
             margin-left: 20px;
-            font-size: smaller;
+            font-size: medium;
             grid-column: 1/3;
+        }
+
+        .add-skills {
+            font-size: large;
+        }
+
+        .education {
+            font-size: large;
+        }
+
+        .experience {
+            font-size: large;
         }
 
     </style>
@@ -148,15 +161,17 @@
             <ul class="skills">
                 <li><label for="html-css">HTML5, CSS3, DOM </label><progress id="html-css" value="85" max="100">85%</progress><p>Layout using CSS3 i JS on <a href="https://github.com/nkvch/restaurant_markup">GitHub</a>, <a href="https://nkvch.github.io/restaurant_markup/">GitHub Pages</a></p></li>
                 <li><label for="js">JavaScript (ES6)</label><progress id="js" value="70" max="100">70%</progress><p><a href="https://www.codewars.com/users/nkvch/completed_solutions">My profile on CodeWars</a> :)</p></li>
-                <li><label for="react">ReactJS</label><progress id="js" value="45" max="100">45%</progress><p>Simple React calendar-app on <a href="https://github.com/nkvch/Planner-App">GitHub</a>, <a href="https://warm-headland-89751.herokuapp.com/">deployed to Heroku</a></p></li>
+                <li><label for="react">ReactJS</label><progress id="react" value="55" max="100">55%</progress><p>Simple React calendar-app on <a href="https://github.com/nkvch/Planner-App">GitHub</a>, <a href="https://warm-headland-89751.herokuapp.com/">deployed to Heroku</a></p></li>
+                <li><label for="angular">Angular</label><progress id="angular" value="35" max="100">35%</progress><p>Simple calculator-app on <a href="https://github.com/nkvch/calculator">GitHub</a>, <a href="https://nkvch.github.io/calculator/">deployed to github pages as PWA</a></p></li>
                 <li><label for="english">English (B2/C1)</label><progress id="js" value="90" max="100">90%</progress></li>
-                <li><label for="english">Polish (C1)</label><progress id="js" value="90" max="100">90%</progress></li>
+                <li><label for="english">Polish (C1)</label><progress id="js" value="100" max="100">100%</progress></li>
                 <li class="node">Basic familiarity with NodeJS (<a href="https://github.com/nkvch/Kierunki">Simple app on GitHub</a>)</li>
             </ul>
         </section>
         <section class="add-skills">
             <h3>Additional skills</h3>
             <ul>
+                <li>Experience with <strong>Linux</strong> terminal(Bash), use Linux as my main system</li>
                 <li>Basic knowledge of Java (+ basic familiarity with SpringBoot)</li>
                 <li>Python on medium level (+ basic familiarity with Flask)</li>
                 <li>C++ on medium level</li>
