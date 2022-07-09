@@ -95,9 +95,7 @@
             padding: 20px;
         }
 
-        .profile,
-        .add-skills,
-        .experience {
+        section:nth-child(odd) {
             background-color: rgba(0, 0, 0, 0.062);
         }
 
@@ -127,6 +125,21 @@
             background-color: #57af4f;
         }
 
+        .company {
+          display: flex;
+          align-items: center;
+        }
+
+        .company p {
+          margin: 0;
+          margin-left: 10px;
+          font-size: 14px;
+        }
+
+        .company-logo {
+          height: 30px;
+        }
+
     </style>
 </head>
 <body>
@@ -134,7 +147,7 @@
         <img class="photo" src="photo.png">
         <div class="name-holder">
             <h1>Stanislau Stankevich</h1>
-            <p>Junior Front End Developer</p>
+            <p>Javascript developer</p>
         </div>
         <ul class="contact-info">
             <li class="address">Kopińska 12/16, 144B, Warsaw</li>
@@ -147,8 +160,20 @@
         <section class="profile">
             <article>
                 <h2>Profil</h2>
-                <p>Od roku zajmuję się frontendem. Obecnie poszukuję pracy/stażu aby przynieść swoje umiejętności do realizacji ciekawych projektów. Bardzo szybko się uczę, lubie poznawać nowe technologie oraz potrafię samodzielnie uczyć się i zdobywać wiedzę. Jestem osobą zdolną do myślenia analitycznego oraz lubię pracować w zespole.</p>
+                <p>Programuję w JS od dwóch lat. Tworzę full-stack'owe aplikacje w React i NodeJS, ale mam też troszkę doświadczenia na mobile. Komercyjnie pracuję od roku. Obecnie poszukuję pracy w jakimś nowym projekcie aby przenieść swoje umiejętności do tworzenia przydatnych narzędzi i aplikacji. Szybko się uczę nowych rzeczy, lubie ciągle poznawać nowe technologie oraz potrafię samodzielnie uczyć się i zdobywać wiedzę.</p>
             </article>
+        </section>
+        <section class="experience">
+          <h2>Doświadczenie</h2>
+          <ul class="list-group">
+            <li class="list-group-item job">
+              <h5>Junior Full-Stack Developer</h5>
+              <div class="company">
+                <img class="company-logo" src="wp-pl-logo.png"/>
+                <p>Wirtualna Polska Media</p>
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="skills">
             <h2 class="mb-4">Umiejętności</h2>
@@ -236,10 +261,6 @@
         <section class="education">
             <h2>Edukacja</h2>
             <p>Politechnika Warszawska, Wydział Elektroniki i Technik Informacyjnych. Kierunek: Automatyka i Robotyka. 4 semestr. Planowany rok ukończenia: 2023.</p>
-        </section>
-        <section class="experience">
-            <h2>Doświadczenie</h2>
-            <p>Brak komercyjnego doświadczenia na podobnym stanowisku</p>
         </section>
     </main>
     <footer>
