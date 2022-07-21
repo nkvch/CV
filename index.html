@@ -125,6 +125,14 @@
             background-color: #57af4f;
         }
 
+        .git-color {
+            background-color: #292961;
+        }
+
+        .aws-color {
+            background-color: #ec7211;
+        }
+
         .company {
           display: flex;
           align-items: center;
@@ -144,7 +152,7 @@
 </head>
 <body>
     <header>
-        <img class="photo" src="photo.png">
+        <img class="photo" src="photo2.jpg">
         <div class="name-holder">
             <h1>Stanislau Stankevich</h1>
             <p>Javascript developer</p>
@@ -170,63 +178,62 @@
               <h5>Junior Full-Stack Developer</h5>
               <div class="company">
                 <img class="company-logo" src="wp-pl-logo.png"/>
-                <p>Wirtualna Polska Media</p>
+                <p>Wirtualna Polska Media (lipiec 2021 - nadal)</p>
               </div>
             </li>
           </ul>
+        </section>
+        <section class="education">
+            <h2>Edukacja</h2>
+            <p>Politechnika Warszawska, Wydział Elektroniki i Technik Informacyjnych. Kierunek: Automatyka i Robotyka. 6 semestr. Planowany rok ukończenia: 2023.</p>
         </section>
         <section class="skills">
             <h2 class="mb-4">Umiejętności</h2>
             <div class="container">
                 <div class="row">
                     <div class="col px-5">
-                        <p class="h5">HTML5, CSS3, DOM, VanillaJS</p>
+                        <p class="h5">NodeJS, Express, NextJS</p>
                         <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar mongo-node-color" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="mt-3 mx-3">Wirtualna symulacja klawiatury nasłuchująca zdarzenia: <a href="https://github.com/nkvch/virtual-keyboard/tree/main">GitHub</a>, <a href="https://nkvch.github.io/virtual-keyboard/">GitHub Pages</a></p>
-                        <p class="mt-3 mx-3">Strona internetowa z użyciem CSS3 i JS na <a href="https://github.com/nkvch/restaurant_markup">GitHub</a>, <a href="https://nkvch.github.io/restaurant_markup/">GitHub Pages</a></p>
-                    </div>
-                    <div class="col px-5">
-                        <p class="h5">SCSS, Bootstrap</p>
-                        <div class="progress">
-                            <div class="progress-bar bootstrap-progress" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <p class="mt-3 mx-3">Modile-first aplikacja Reactowa stylowana z Bootstrap v5.0 na <a href="https://github.com/nkvch/Recipapp">GitHub</a>, <a href="https://agile-dusk-75413.herokuapp.com/">deployowana na Heroku</a></p>
-                        <p class="mt-3 mx-3">Symulacja klawiatury stylowana z SCSS: <a href="https://github.com/nkvch/virtual-keyboard/tree/main">GitHub</a>, <a href="https://nkvch.github.io/virtual-keyboard/">GitHub Pages</a></p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col px-5">
-                        <p class="h5">JavaScript</p>
+                        <p class="mt-3 mx-3">Panel do zarządzania farmą jagodową: <a href="http://farmapp.nkvch.me">demo (klon do produkcyjnie działającego rozwiązania)</a>, <a href="https://github.com/nkvch/qr-berrymore-app">kod</a></p>
+                        <p class="h5">JavaScript, TypeScript</p>
                         <div class="progress">
                             <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p class="mt-3 mx-3"><a href="https://www.codewars.com/users/nkvch/completed_solutions">Mój profil na CodeWars</a> :)</p>
+                        <p class="h5">Git (+ GitLab CI)</p>
+                        <div class="progress">
+                            <div class="progress-bar git-color" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="mt-3 mx-3">Dobra znajomość gita + pisanie Pipelines w GitLab</p>
+                        <p class="h5">DB (SQL, noSQL)</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="mt-3 mx-3">SQL: głównie MySQL + znajomość PLSQL</p>
+                        <p class="mt-3 mx-3">noSQL: Firebase Firestore/RealtimeDatabase, podstawowe zaprzyjaźnienie z Mongo</p>
+                        <p class="h5">Chmury</p>
+                        <div class="progress">
+                            <div class="progress-bar aws-color" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="mt-3 mx-3">AWS: ec2, RDS. Niekomercyjne doświadczenie</p>
+                        <p class="mt-3 mx-3">Google Cloud: Firebase, CloudFunctions. Niekomercyjne doświadczenie</p>
                     </div>
                     <div class="col px-5">
+                        <p class="h5">Browser JS, DOM, Sass</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="mt-3 mx-3">Głosowy online quiz - część związana ze sterowaniem głosowym  (działanie w FF wymaga włączenia WebSpeechAPI): <a href="https://lang-robot.gitlab.io/">demo</a>, <a href="https://gitlab.com/lang-robot/lang-robot.gitlab.io">kod</a></p>
+                        <p class="mt-3 mx-3">Wirtualna klawiatura: <a href="https://nkvch.github.io/virtual-keyboard/">demo</a>, <a href="https://github.com/nkvch/virtual-keyboard/tree/main">kod</a></p>
+                        <p class="mt-3 mx-3">Markup strony restauracji: <a href="https://nkvch.github.io/restaurant_markup/">demo</a>, <a href="https://github.com/nkvch/restaurant_markup">kod</a></p>
                         <p class="h5">ReactJS, Redux</p>
                         <div class="progress">
                             <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="h5 mt-3">NodeJS, Express, MongoDB</p>
-                        <div class="progress">
-                            <div class="progress-bar mongo-node-color" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <p class="mt-3 mx-3">Full-stack aplikacja - graficzny edytor plików JSON z możliwością tworzenia konta i przechowywania plików w Mongo Atlas: <a href="https://github.com/nkvch/JSON-editor">GitHub</a>, <a href="https://json-editor-1.herokuapp.com/">deployowana na Heroku</a></p>
-
-                </div>
-                </div>
-                <div class="row">
-                    <div class="col px-5">
-                        <p class="h5">Angular</p>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <p class="mt-3 mx-3">Podstawowe zaprzyjaźnienie</p>
-                        <p class="mt-3 mx-3">Prosta aplikacja-kalkulator na <a href="https://github.com/nkvch/calculator">GitHub</a>, <a href="https://nkvch.github.io/calculator/">deployowana na github pages jako PWA</a></p>
-                    </div>
-                    <div class="col px-5">
+                        <p class="mt-3 mx-3">Modile-first aplikacja z przepisami: <a href="https://agile-dusk-75413.herokuapp.com/">demo (Heroku)</a>, <a href="https://github.com/nkvch/Recipapp">kod</a></p>
+                        <p class="mt-3 mx-3">Graficzny edytor plików JSON: <a href="https://json-editor-1.herokuapp.com/">demo (Heroku)</a>, <a href="https://github.com/nkvch/JSON-editor">kod</a></p>
                         <p class="h5">Mówię po</p>
                         <p class="h6 mt-3">Polsku (C1)</p>
                         <div class="progress" style="height: 8px;">
@@ -236,31 +243,10 @@
                         <div class="progress" style="height: 8px;">
                             <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="h6 mt-3">Rosyjsku (C1)</p>
-                        <div class="progress" style="height: 8px;">
-                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
+                        <p class="h6 mt-3">Rosyjsku (ojczysty)</p>
                     </div>
                 </div>
             </div>
-            <ul class="skills">
-
-                
-            </ul>
-        </section>
-        <section class="add-skills">
-            <h3>Dodaktowe umiejętności</h3>
-            <ul>
-                <li>Podstawowa znajomość <strong>SQL</strong></li>
-                <li>Doświadczenie z terminalem <strong>Linux</strong>, użuwam Linuxa jako swój główny system</li>
-                <li>Podstawowa znajomość <strong>Java</strong> (+ podstawowa znajomość <strong>SpringBoot</strong>)</li>
-                <li><strong>Python</strong> na średnim poziomie (+ podstawowa znajomość <strong>Flask</strong>)</li>
-                <li><strong>C++</strong> na średnim poziomie</li>
-            </ul>
-        </section>
-        <section class="education">
-            <h2>Edukacja</h2>
-            <p>Politechnika Warszawska, Wydział Elektroniki i Technik Informacyjnych. Kierunek: Automatyka i Robotyka. 4 semestr. Planowany rok ukończenia: 2023.</p>
         </section>
     </main>
     <footer>
