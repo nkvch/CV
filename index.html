@@ -17,11 +17,11 @@
         }
 
         html {
-            width: 1000px;
+            width: 1200px;
         }
 
         body {
-            width: 1000px;
+            width: 1200px;
             margin: auto;
         }
 
@@ -39,6 +39,14 @@
             border-radius: 100%;
         }
 
+        .name-holder {
+            padding-right: 150px;
+        }
+
+        .name-holder p {
+            font-size: larger;
+        }
+
         .name-holder p,
         .name-holder h1 {
             margin: 0;
@@ -47,7 +55,8 @@
 
         .contact-info {
             list-style: none;
-
+            margin-bottom: 0;
+            font-size: large;
         }
 
         .contact-info li {
@@ -92,7 +101,7 @@
         /* SECTIONS STYLES */
 
         section {
-            padding: 20px;
+            padding: 25px;
         }
 
         section:nth-child(odd) {
@@ -172,7 +181,7 @@
         <section class="profile">
             <article>
                 <h2>Profil</h2>
-                <p>Programuję w JS od dwóch lat. Tworzę full-stack'owe aplikacje w React i NodeJS, ale mam też troszkę doświadczenia na mobile. Komercyjnie pracuję od roku. Obecnie poszukuję pracy w jakimś nowym projekcie aby przenieść swoje umiejętności do tworzenia przydatnych narzędzi i aplikacji. Szybko się uczę nowych rzeczy, lubie ciągle poznawać nowe technologie oraz potrafię samodzielnie uczyć się i zdobywać wiedzę.</p>
+                <p>Programuję w JS od dwóch lat. Tworzę full-stack aplikacje w React i NodeJS, ale mam też troszkę doświadczenia na mobile. Komercyjnie pracuję od roku. Obecnie poszukuję pracy w jakimś nowym projekcie aby przenieść swoje umiejętności do tworzenia przydatnych narzędzi i aplikacji. Szybko się uczę nowych rzeczy, lubie ciągle poznawać nowe technologie oraz potrafię samodzielnie uczyć się i zdobywać wiedzę.</p>
             </article>
         </section>
         <section class="experience">
@@ -257,6 +266,15 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="additional-skills">
+            <h2>Dodatkowe umiejętności</h2>
+            <ul class="add-skills">
+                <li>Docker: podstawowa praca (budowanie obrazów, zarządzanie zasobami) - brak doświadczenia w tworzeniu własnych obrazów</li>
+                <li>Mikroserwisy: doświadczenie w pracy z projektem, działającym na kilku mikroserwisach</li>
+                <li>Bash: doświadczenie w pisaniu niezbyt skomplikowanych bash-skryptów</li>
+                <li>Testy: doświadczenie w tworzeniu testów wydajnościowych (w opraciu o artillery.io), jednostkowych (w opraciu o Jest)</li>
+            </ul>
         </section>
     </main>
     <footer>
