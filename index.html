@@ -100,11 +100,11 @@
 
         /* SECTIONS STYLES */
 
-        section {
+        .section {
             padding: 25px;
         }
 
-        section:nth-child(odd) {
+        .section:nth-child(odd) {
             background-color: rgba(0, 0, 0, 0.062);
         }
 
@@ -120,10 +120,12 @@
 
         .education {
             font-size: large;
+            width: 50%;
         }
 
         .experience {
             font-size: large;
+            width: 50%;
         }
 
         .bootstrap-progress {
@@ -161,6 +163,13 @@
           height: 30px;
         }
 
+        .section-joiner {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -168,86 +177,99 @@
         <img class="photo" src="photo2.jpg">
         <div class="name-holder">
             <h1>Stanislau Stankevich</h1>
-            <p>Javascript developer</p>
+            <p>Full-Stack developer</p>
         </div>
         <ul class="contact-info">
-            <li class="address">Kopińska 12/16, 144B, Warsaw</li>
             <li class="github"><a href="https://github.com/nkvch">github.com/nkvch</a></li>
             <li class="email"><a href="mailto: nkvch.st@gmail.com">nkvch.st@gmail.com</a></li>
             <li class="phone">+48 660 226 397</li>
         </ul>
     </header>
     <main>
-        <section class="profile">
+        <section class="section profile">
             <article>
                 <h2>Profile</h2>
                 <p>I have been programming in JS for two years. I create full-stack applications in React and NodeJS, but I also have some experience on mobile. Being working commercially for a year, I am currently looking for a job in a new project to bring my skills to creating useful tools and applications. I learn new things quickly, like to constantly learn new technologies and can learn and gain knowledge on my own.</p>
             </article>
         </section>
-        <section class="experience">
-          <h2>Experience</h2>
-          <ul class="list-group">
-            <li class="list-group-item job">
-              <h5>Junior Full-Stack Developer</h5>
-              <div class="company">
-                <img class="company-logo" src="wp-pl-logo.png"/>
-                <p>Wirtualna Polska Media (july 2021 - july 2022)</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="education">
-            <h2>Education</h2>
-            <p>Warsaw University of Technology, Faculty of Electronics and Information Technology. Major: Automation and Robotics. 6 semester. Planned year of completion: 2023.</p>
-        </section>
-        <section class="skills">
+        <div class="section section-joiner">
+            <section class="education">
+                <h2>Education</h2>
+                <ul class="list-group">
+                    <li class="list-group-item job">
+                    <h5>Automatics and robotics</h5>
+                    <div class="company">
+                        <img class="company-logo" src="weiti.jpeg"/>
+                        <p>Warsaw University of Technology <br />
+                        Faculty of Electronics and Information Technology <br/>
+                        october 2019 - semtember 2023 (planned)</p>
+                    </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="experience">
+            <h2>Experience</h2>
+            <ul class="list-group">
+                <li class="list-group-item job">
+                <h5>Junior Full-Stack Developer</h5>
+                <div class="company">
+                    <img class="company-logo" src="wp-pl-logo.png"/>
+                    <p>Wirtualna Polska Media (july 2021 - july 2022)</p>
+                </div>
+                </li>
+                <li class="list-group-item job">
+                <h5>Mid Frontend Developer</h5>
+                <div class="company">
+                    <img class="company-logo" src="usertive.jpeg"/>
+                    <p>Usertive (DaftCode group) (semptember 2022 - march 2023)</p>
+                </div>
+            </ul>
+            </section>
+        </div>
+        <section class="section skills">
             <h2 class="mb-4">Skills</h2>
             <div class="container">
                 <div class="row">
                     <div class="col px-5">
-                        <p class="h5">NodeJS, Express, NextJS</p>
+                        <p class="h5">React, NextJS</p>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <p class="mt-3 mx-3">I have worked on several projects based on React or Next with <strong>TypeScript</strong>. Have experience with many popular UI, form, state management libraries</p>
+                        <p class="mt-3 mx-3">Modile-first recipe app: <a href="https://agile-dusk-75413.herokuapp.com/">demo (Heroku)</a>, <a href="https://github.com/nkvch/Recipapp">code</a></p>
+                        <p class="mt-3 mx-3">GUI JSON file editor: <a href="https://json-editor-1.herokuapp.com/">demo (Heroku)</a>, <a href="https://github.com/nkvch/JSON-editor">code</a></p>
+                        <p class="mt-3 mx-3">Mob. berry farm application: <a href="http://farmapp.nkvch.me/download">download APK</a>, <a href="https://github.com/nkvch/Berry_QR">code</a></p>
+                        <p class="h5">NodeJS backend development</p>
                         <div class="progress">
                             <div class="progress-bar mongo-node-color" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
+                        <p class="mt-3 mx-3">
+                            Have experience at building REST APIs with NodeJS (Express) professionally. Have built <strong>GraphQL</strong> based API on side projects. Familiar with NestJS.
+                        </p>
                         <p class="mt-3 mx-3">Blueberry farm management panel: <a href="http://farmapp.nkvch.me">demo (clone for system working on prod)</a>, <a href="https://github.com/nkvch/qr-berrymore-app">code</a></p>
-                        <p class="h5">JavaScript, TypeScript</p>
+                        <p class="h5">DevOps</p>
                         <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar git-color" role="progressbar" style="width: 25%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="mt-3 mx-3"><a href="https://www.codewars.com/users/nkvch/completed_solutions">My CodeWars profile</a> :)</p>
-                        <p class="h5">Git (+ GitLab CI)</p>
+                        <p class="mt-3 mx-3">Good knowledge of git practices. Experience working with <strong>GitLab CI/CD</strong> pipelines professionally. Some experience with GitHub actions. <strong>Linux (bash) scripting</strong> at amature level. <br/>
+                        Hands on experience with <strong>AWS</strong> (EC2, RDS, ElastiCache) and <strong>Google Cloud</strong> (Firebase, CloudFunctions). Hands on experience with basic <strong>Nginx</strong> configuration. Experience with basic <strong>Docker</strong> operations. Familiarity with Terraform and IaC concept.</p>
+                        </p>
+                    </div>
+                    <div class="col px-5">
+                        <p class="h5">Browser JS, DOM, CSS</p>
                         <div class="progress">
-                            <div class="progress-bar git-color" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="mt-3 mx-3">Good knowledge of git + writing Pipelines in GitLab</p>
-                        <p class="h5">DB (SQL, noSQL)</p>
+                        <p class="mt-3 mx-3">Good knowledge of Vanilla JS, CSS (SASS, SCSS) and Web APIs. Familiarity with <strong>WebSockets</strong> (socket.io). Experience at builing PWA app.
+                        <p class="mt-3 mx-3">Online voice quiz - part related to voice control (working in FF requires WebSpeechAPI to be enabled): <a href="https://lang-robot.gitlab.io/">demo</a>, <a href="https://gitlab.com/lang-robot/lang-robot.gitlab.io">code</a></p>
+                        <p class="mt-3 mx-3">Virtual keyboard: <a href="https://nkvch.github.io/virtual-keyboard/">demo</a>, <a href="https://github.com/nkvch/virtual-keyboard/tree/main">code</a></p>
+                        <p class="mt-3 mx-3">Restaurant website markup: <a href="https://nkvch.github.io/restaurant_markup/">demo</a>, <a href="https://github.com/nkvch/restaurant_markup">code</a></p>
+                        <p class="h5">Databases</p>
                         <div class="progress">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p class="mt-3 mx-3">SQL: mainly MySQL + knowledge of PLSQL</p>
                         <p class="mt-3 mx-3">noSQL: Firebase Firestore/RealtimeDatabase, basic familiarity with Mongo</p>
-                        <p class="h5">Cloud</p>
-                        <div class="progress">
-                            <div class="progress-bar aws-color" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <p class="mt-3 mx-3">AWS: ec2, RDS. Non-commercial experience</p>
-                        <p class="mt-3 mx-3">Google Cloud: Firebase, CloudFunctions. Non-commercial experience</p>
-                    </div>
-                    <div class="col px-5">
-                        <p class="h5">Browser JS, DOM, Sass</p>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <p class="mt-3 mx-3">Online voice quiz - part related to voice control (working in FF requires WebSpeechAPI to be enabled): <a href="https://lang-robot.gitlab.io/">demo</a>, <a href="https://gitlab.com/lang-robot/lang-robot.gitlab.io">code</a></p>
-                        <p class="mt-3 mx-3">Virtual keyboard: <a href="https://nkvch.github.io/virtual-keyboard/">demo</a>, <a href="https://github.com/nkvch/virtual-keyboard/tree/main">code</a></p>
-                        <p class="mt-3 mx-3">Restaurant website markup: <a href="https://nkvch.github.io/restaurant_markup/">demo</a>, <a href="https://github.com/nkvch/restaurant_markup">code</a></p>
-                        <p class="h5">ReactJS, React Native, Redux</p>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <p class="mt-3 mx-3">Modile-first recipe app: <a href="https://agile-dusk-75413.herokuapp.com/">demo (Heroku)</a>, <a href="https://github.com/nkvch/Recipapp">code</a></p>
-                        <p class="mt-3 mx-3">GUI JSON file editor: <a href="https://json-editor-1.herokuapp.com/">demo (Heroku)</a>, <a href="https://github.com/nkvch/JSON-editor">code</a></p>
-                        <p class="mt-3 mx-3">Mob. berry farm application: <a href="http://farmapp.nkvch.me/download">download APK</a>, <a href="https://github.com/nkvch/Berry_QR">code</a></p>
                         <p class="h5">Agile (Scrum)</p>
                         <div class="progress">
                             <div class="progress-bar agile-color" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -267,7 +289,7 @@
                 </div>
             </div>
         </section>
-        <section class="additional-skills">
+        <section class="section additional-skills">
             <h2>Additional skills</h2>
             <ul class="add-skills">
                 <li>Docker: basic operations (image building, resource management) - no experience in creating my own images</li>
