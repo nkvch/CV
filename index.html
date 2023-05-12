@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/fad0da5ccb.js" crossorigin="anonymous"></script>
     <title>Stanislau Stankevich</title>
     <style>
@@ -32,6 +37,10 @@
             align-items: center;
             background-color: rgb(0, 0, 0);
             color: white;
+        }
+
+        main {
+            background: linear-gradient(308deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.2191001400560224) 0%, rgba(255,255,255,1) 53%);
         }
 
         .photo {
@@ -64,19 +73,23 @@
             position: relative;
         }
 
-        .contact-info .address::before{
+        .contact-info .address::before {
             content: "\f3c5";
         }
 
-        .contact-info .github::before{
+        .contact-info .github::before {
             content: "\f09b";
+        }
+
+        .contact-info .linkedin::before {
+            content: "\f08c";
         }
 
         .contact-info .email::before {
             content: "\f199";
         }
 
-        .contact-info .phone::before{
+        .contact-info .phone::before {
             content: "\f879";
         }
 
@@ -88,13 +101,14 @@
             left: -35px;
         }
 
-        .contact-info a:link, .contact-info a:visited{
+        .contact-info a:link,
+        .contact-info a:visited {
             color: white;
             text-decoration: none;
         }
 
         .contact-info a:hover {
-            color:#6c93ff;
+            color: #6c93ff;
             text-decoration: none;
         }
 
@@ -104,9 +118,9 @@
             padding: 25px;
         }
 
-        .section:nth-child(odd) {
+        /* .section:nth-child(even) {
             background-color: rgba(0, 0, 0, 0.062);
-        }
+        } */
 
         .profile p {
             text-align: justify;
@@ -149,18 +163,18 @@
         }
 
         .company {
-          display: flex;
-          align-items: center;
+            display: flex;
+            align-items: center;
         }
 
         .company p {
-          margin: 0;
-          margin-left: 10px;
-          font-size: 14px;
+            margin: 0;
+            margin-left: 10px;
+            font-size: 14px;
         }
 
         .company-logo {
-          height: 30px;
+            height: 30px;
         }
 
         .section-joiner {
@@ -170,62 +184,127 @@
             gap: 20px;
         }
 
+        .langs {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .langs .lang {
+            width: 30%;
+        }
+
+        .progress {
+            /* background-color: aqua; */
+            border: 1px solid rgba(0, 0, 0, 0.162);
+        }
+
+        .python-color {
+            background-color: #306998;
+        }
+
+        .python-yellow {
+            background-color: #f7e018;
+        }
+
+        .python-gradient {
+            background: linear-gradient(90deg, #306998 50%, #f7e018 50%);
+        }
+
+        .gitlab-color {
+            background-color: #fc6d26;
+        }
+
+        .mysql-color {
+            background-color: #00758f;
+        }
+
+        .browser-color {
+            background-color: #f0db4f;
+        }
+
+        .nodejs-color {
+            background-color: #68a063;
+        }
+
+        .lang-color {
+            background-color: #e45858;
+        }
+
+        .app-link {
+            color: #1b1e26;
+        }
+
+        .divider {
+            width: 90%;
+            height: 1px;
+            background-color: rgba(0, 0, 0, 0.162);
+            margin: 20px auto;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <img class="photo" src="photo2.jpg">
         <div class="name-holder">
             <h1>Stanislau Stankevich</h1>
-            <p>Full-Stack developer</p>
+            <p>Full Stack developer</p>
         </div>
         <ul class="contact-info">
-            <li class="github"><a href="https://github.com/nkvch">github.com/nkvch</a></li>
-            <li class="email"><a href="mailto: nkvch.st@gmail.com">nkvch.st@gmail.com</a></li>
-            <li class="phone">+48 660 226 397</li>
+            <li class="github"><a href="https://github.com/nkvch">github.com/nkvch &#x1F517;</a></li>
+            <li class="linkedin"><a href="https://www.linkedin.com/in/stanislau-stankevich-19883b209/">linkedin.com/nkvch &#x1F517;</a></li>
+            <li class="email"><a href="mailto: nkvch.st@gmail.com">nkvch.st@gmail.com &#128279;</a></li>
+            <li class="phone">
+                <a href="tel:+48660226397">+48 660 226 397</a>
+            </li>
         </ul>
     </header>
     <main>
         <section class="section profile">
             <article>
                 <h2>Profile</h2>
-                <p>I have been programming in JS for two years. I create full-stack applications in React and NodeJS, but I also have some experience on mobile. Being working commercially for a year, I am currently looking for a job in a new project to bring my skills to creating useful tools and applications. I learn new things quickly, like to constantly learn new technologies and can learn and gain knowledge on my own.</p>
+                <p>As a Full Stack Developer, I am passionate about building functional and visually appealing applications. With a focus on JavaScript and TypeScript, I have a strong foundation in web development. As a pregraduate student of Automatics and Robotics, I bring a multidisciplinary approach to my work. Worked on developping microservices-based apps, using Git and CI/CD tools. Deploying full-stack apps on AWS. Worked in Scrum. I am always eager to learn new technologies and skills to enhance my expertise.
+                </p>
             </article>
         </section>
+        <div class="divider"></div>
         <div class="section section-joiner">
             <section class="education">
                 <h2>Education</h2>
                 <ul class="list-group">
                     <li class="list-group-item job">
-                    <h5>Automatics and robotics</h5>
-                    <div class="company">
-                        <img class="company-logo" src="weiti.jpeg"/>
-                        <p>Warsaw University of Technology <br />
-                        Faculty of Electronics and Information Technology <br/>
-                        october 2019 - semtember 2023 (planned)</p>
-                    </div>
+                        <h5>Automatics and robotics</h5>
+                        <div class="company">
+                            <img class="company-logo" src="weiti.jpeg" />
+                            <p>Warsaw University of Technology <br />
+                                Faculty of Electronics and Information Technology <br />
+                                october 2019 - semtember 2023 (planned)</p>
+                        </div>
                     </li>
                 </ul>
             </section>
             <section class="experience">
-            <h2>Experience</h2>
-            <ul class="list-group">
-                <li class="list-group-item job">
-                <h5>Junior Full-Stack Developer</h5>
-                <div class="company">
-                    <img class="company-logo" src="wp-pl-logo.png"/>
-                    <p>Wirtualna Polska Media (july 2021 - july 2022)</p>
-                </div>
-                </li>
-                <li class="list-group-item job">
-                <h5>Mid Frontend Developer</h5>
-                <div class="company">
-                    <img class="company-logo" src="usertive.jpeg"/>
-                    <p>Usertive (DaftCode group) (semptember 2022 - march 2023)</p>
-                </div>
-            </ul>
+                <h2>Experience</h2>
+                <ul class="list-group">
+                    <li class="list-group-item job">
+                        <h5>Junior Full Stack Developer</h5>
+                        <div class="company">
+                            <img class="company-logo" src="wp-pl-logo.png" />
+                            <p>Wirtualna Polska Media (july 2021 - july 2022)</p>
+                        </div>
+                    </li>
+                    <li class="list-group-item job">
+                        <h5>Mid Frontend Developer</h5>
+                        <div class="company">
+                            <img class="company-logo" src="usertive.jpeg" />
+                            <p>Usertive (DaftCode group) (semptember 2022 - march 2023)</p>
+                        </div>
+                </ul>
             </section>
         </div>
+        <div class="divider"></div>
         <section class="section skills">
             <h2 class="mb-4">Skills</h2>
             <div class="container">
@@ -233,70 +312,101 @@
                     <div class="col px-5">
                         <p class="h5">React, NextJS</p>
                         <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="mt-3 mx-3">I have worked on several projects based on React or Next with <strong>TypeScript</strong>. Have experience with many popular UI, form, state management libraries</p>
-                        <p class="mt-3 mx-3">Modile-first recipe app: <a href="https://agile-dusk-75413.herokuapp.com/">demo (Heroku)</a>, <a href="https://github.com/nkvch/Recipapp">code</a></p>
-                        <p class="mt-3 mx-3">GUI JSON file editor: <a href="https://json-editor-1.herokuapp.com/">demo (Heroku)</a>, <a href="https://github.com/nkvch/JSON-editor">code</a></p>
-                        <p class="mt-3 mx-3">Mob. berry farm application: <a href="http://farmapp.nkvch.me/download">download APK</a>, <a href="https://github.com/nkvch/Berry_QR">code</a></p>
+                        <p class="mt-3 mx-3">I have worked on several projects based on React or Next with
+                            <strong>TypeScript</strong>. Have experience with many popular UI, form, state management
+                            libraries</p>
+                        <p class="mt-3 mx-3"><a
+                             class="app-link" href="http://rekwizytornia.maltastudio.pl/">Website built on React with GraphQL</a> &#x1F517; (side project)</p>
+                        <p class="mt-3 mx-3"><a
+                                class="app-link" href="https://berry-more.com/">PWA app built fully on NextJS</a> &#x1F517; (side project)</p>
+                        
                         <p class="h5">NodeJS backend development</p>
                         <div class="progress">
-                            <div class="progress-bar mongo-node-color" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar nodejs-color" role="progressbar" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                         <p class="mt-3 mx-3">
-                            Have experience at building REST APIs with NodeJS (Express) professionally. Have built <strong>GraphQL</strong> based API on side projects. Familiar with NestJS.
+                            Have experience at building REST APIs with NodeJS (Express) professionally. Have built
+                            <strong>GraphQL</strong> based API on side projects. Familiar with NestJS.
                         </p>
-                        <p class="mt-3 mx-3">Blueberry farm management panel: <a href="http://farmapp.nkvch.me">demo (clone for system working on prod)</a>, <a href="https://github.com/nkvch/qr-berrymore-app">code</a></p>
                         <p class="h5">DevOps</p>
                         <div class="progress">
-                            <div class="progress-bar git-color" role="progressbar" style="width: 25%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar gitlab-color" role="progressbar" style="width: 25%" aria-valuenow="45"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="mt-3 mx-3">Good knowledge of git practices. Experience working with <strong>GitLab CI/CD</strong> pipelines professionally. Some experience with GitHub actions. <strong>Linux (bash) scripting</strong> at amature level. <br/>
-                        Hands on experience with <strong>AWS</strong> (EC2, RDS, ElastiCache) and <strong>Google Cloud</strong> (Firebase, CloudFunctions). Hands on experience with basic <strong>Nginx</strong> configuration. Experience with basic <strong>Docker</strong> operations. Familiarity with Terraform and IaC concept.</p>
+                        <p class="mt-3 mx-3">Good knowledge of git practices. Experience working with <strong>GitLab
+                                CI/CD</strong> pipelines professionally. Some experience with GitHub actions.
+                            <strong>Linux (bash) scripting</strong> at amature level. <br />
+                            Hands on experience with <strong>AWS</strong> (EC2, RDS, ElastiCache) and <strong>Google
+                                Cloud</strong> (Firebase, CloudFunctions). Hands on experience with basic
+                            <strong>Nginx</strong> configuration. Experience with basic <strong>Docker</strong>
+                            operations. Familiarity with Terraform and IaC concept.</p>
                         </p>
                     </div>
                     <div class="col px-5">
                         <p class="h5">Browser JS, DOM, CSS</p>
                         <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar browser-color" role="progressbar" style="width: 70%"
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="mt-3 mx-3">Good knowledge of Vanilla JS, CSS (SASS, SCSS) and Web APIs. Familiarity with <strong>WebSockets</strong> (socket.io). Experience at builing PWA app.
-                        <p class="mt-3 mx-3">Online voice quiz - part related to voice control (working in FF requires WebSpeechAPI to be enabled): <a href="https://lang-robot.gitlab.io/">demo</a>, <a href="https://gitlab.com/lang-robot/lang-robot.gitlab.io">code</a></p>
-                        <p class="mt-3 mx-3">Virtual keyboard: <a href="https://nkvch.github.io/virtual-keyboard/">demo</a>, <a href="https://github.com/nkvch/virtual-keyboard/tree/main">code</a></p>
-                        <p class="mt-3 mx-3">Restaurant website markup: <a href="https://nkvch.github.io/restaurant_markup/">demo</a>, <a href="https://github.com/nkvch/restaurant_markup">code</a></p>
+                        <p class="mt-3 mx-3">Good knowledge of Vanilla JS, CSS (SASS, SCSS) and Web APIs. Familiarity
+                            with <strong>WebSockets</strong> (socket.io). Experience at builing PWA app.
+                        <p class="mt-3 mx-3">Online voice quiz <a class="app-link" href="https://lang-robot.gitlab.io/">demo</a>&#x1F517;, <a
+                                class="app-link"
+                                href="https://gitlab.com/lang-robot/lang-robot.gitlab.io">code</a>&#x1F517;</p>
+                        <p class="mt-3 mx-3">Virtual keyboard: <a
+                                class="app-link"
+                                href="https://nkvch.github.io/virtual-keyboard/">demo</a>&#x1F517;, <a
+                                class="app-link"
+                                href="https://github.com/nkvch/virtual-keyboard/tree/main">code</a>&#x1F517;</p>
                         <p class="h5">Databases</p>
                         <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar mysql-color" role="progressbar" style="width: 50%" aria-valuenow="50"
+                                aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <p class="mt-3 mx-3">SQL: mainly MySQL + knowledge of PLSQL</p>
-                        <p class="mt-3 mx-3">noSQL: Firebase Firestore/RealtimeDatabase, basic familiarity with Mongo</p>
-                        <p class="h5">Agile (Scrum)</p>
+                        <p class="mt-3 mx-3">SQL: mainly <strong>MySQL</strong>, <strong>PostgreSQL</strong>. noSQL:
+                            Firebase Firestore/RealtimeDatabase, basic familiarity with Mongo<br />
+                            Have experience with popular ORMs like Sequelize, Prisma</p>
+                        <p class="h5">Python backend development</p>
                         <div class="progress">
-                            <div class="progress-bar agile-color" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar python-color" role="progressbar" style="width: 20%" aria-valuenow="30"
+                                aria-valuemin="0" aria-valuemax="100"></div>    
                         </div>
-                        <p class="mt-3 mx-3">Year of experience working in Scrum</p>
+                        <p class="mt-3 mx-3">Have built simple REST API with Flask. Connected to PostgreSQL with psycopg2</p>
                         <p class="h5">Speaking languages</p>
-                        <p class="h6 mt-3">Polish (C1)</p>
-                        <div class="progress" style="height: 8px;">
-                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="langs">
+                            <div class="lang">
+                                <p class="h6 mt-3">Polish (C1)</p>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar lang-color" role="progressbar" style="width: 100%" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="lang">
+                                <p class="h6 mt-3">English (B2)</p>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar lang-color" role="progressbar" style="width: 85%" aria-valuenow="85"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="lang">
+                                <p class="h6 mt-3">Belarusian, russian (native)</p>
+                            </div>
                         </div>
-                        <p class="h6 mt-3">English (B2)</p>
-                        <div class="progress" style="height: 8px;">
-                            <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                        <p class="h6 mt-3">Belarusian, russian (native)</p>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="divider"></div>
         <section class="section additional-skills">
             <h2>Additional skills</h2>
             <ul class="add-skills">
-                <li>Docker: basic operations (image building, resource management) - no experience in creating my own images</li>
-                <li>Microservices: experience in working with a project that runs on microservices architecture</li>
-                <li>Bash: experience in writing not too complicated bash-scripts</li>
-                <li>Tests: experience in creating performance tests (with artillery.io), unit tests (with Jest)</li>
-                <li>Python: non-commercial experience with Python (numpy, pandas, openai)</li>
+                <li>OpenAI's APIs: have experience with <strong>OpenAI's GPT-3.5 APIs</strong> and building app on it (not commercial)</li>
+                <li>AI: studyed AI at university, have experience with PyTorch, TensorFlow. Building basic models for CV.</li>
+                <li>Robotics: experience in working with ROS (Robot Operating System) with Python</li>
             </ul>
         </section>
     </main>
@@ -304,4 +414,5 @@
 
     </footer>
 </body>
+
 </html>
